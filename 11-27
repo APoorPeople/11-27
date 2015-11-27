@@ -1,0 +1,59 @@
+/*#include<iostream.h>
+class A
+{
+
+private:
+	int b;
+protected:
+	int c;
+public:
+	int a;
+	int geta(){ return a; }
+	int getb(){ return b; }
+	int getc(){ return c; }
+};
+
+
+//函数geta在类体外的定义；
+//int A::geta()
+//{return a; }
+
+void main()
+{
+	A k;//定义类A的对象k；
+	
+	/////////访问类A中对象k中数据成员的情况；
+//	k.a;
+//	k.b;
+//	k.c;
+//	k.geta();
+	k.getb();
+//	k.getc();
+
+
+k.a=3;
+
+cout<<k.geta()<<endl;
+ }*/
+
+#include<iostream.h>
+
+class A
+{
+	
+public:
+	int a;
+	int b;
+	int c;
+	A(){}
+	A(int num1,int num2,int num3){a = num1; b = num2 ;c = num3;}
+	put(int num1,int num2,int num3){a = num1; b = num2 ;c = num3;}
+	void  Print(){  cout<<a<<b<<c; }
+};
+
+void main()
+{
+	A g;
+	g.put(1,2,3);
+	g.Print();
+}
